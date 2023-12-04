@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: rgb(219, 244, 252);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+}
+
+.beaker{
+    width: 30%;
+    height: 50%;
+    border: 7px solid black;
+    border-radius: 5px;
+    border-top: none;
+    position: absolute;
+    top: 25%;
+}
+
+.liquid{
+    background: white;
+    width: 100%;
+    height: 50%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: background 0.5s linear;
+}
+
+.ph{
+    position: absolute;
+    bottom: 10%;
+    font-weight: 700;
+}
+.substance1{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.substance2{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.substance1 > h1, .substance2 > h1{
+    font-size: 40px;
+    margin: 0;
+    color: rgb(0, 125, 179)
+}
+.substance1 > h3, .substance2 > h3{
+    font-size: 20px;
+}
+#substance1, #substance2{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.slider{
+    width: 230px;
+    margin-top: 200px;
+}
+
+#AddIndicator{
+    font-size: 25px;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    background: rgba(0, 179, 255, 0.45);
+    border: 3px solid rgb(42, 121, 248);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#AddIndicator:hover{
+    background: rgba(0, 179, 255, 0.30);
+}
+#AddIndicator:active{
+    transform: scale(0.9);
+}
+
+/* Substances */
+
+.LemonJuice{
+    background: hsla(60, 59%, 74%, 0.565);
+}
+.Vinegar, .BakingSoda{
+    background: hsla(0, 0%, 100%, 0.647);
+}
+.Tomato{
+    background: hsla(0, 100%, 50%, 0.776)
+}
+.Water, .Bleach{
+    background: hsla(240, 100%, 78%, 0.464)
+}
+.HandSoap{
+    background: hsla(120, 96%, 69%, 0.757)
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 70px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.substance-btn1{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.scale{
+    position: relative;
+    top: 7%;
+    width: 80%;
+    height: 50px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(134,0,205,1) 50%, rgba(13,102,183,1) 84%, rgba(0,181,142,1) 100%);
+    display: flex;
+    align-items: center;
+}
+#line{
+    position: absolute;
+    height: 70px;
+    width: 7px;
+    background: black;
+    left: 50%;
+    border-radius: 50px;
+}

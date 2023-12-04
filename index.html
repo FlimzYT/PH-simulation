@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Level Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scale">
+        <div id="line"></div>
+    </div>
+
+    <div class="beaker">
+        <div class="liquid Water"></div>
+    </div>
+
+    <h1 class="ph">PH = <span id="PH">-</span></h2>
+
+    <button id="AddIndicator">Add Indicator</button>
+
+    <div class="substance1">
+        <h1>Substance 1</h1>
+
+        <div class="dropdown">
+            <h2 id="substance1">Water𝅏</h2>
+            <div class="dropdown-content">
+              <button class="substance-btn1" value="LemonJuice">Lemon Juice</button>
+              <button class="substance-btn1" value="Vinegar">Vinegar</button>
+              <button class="substance-btn1" value="Soda">Soda</button>
+              <button class="substance-btn1" value="Water">Water</button>
+              <button class="substance-btn1" value="BakingSoda">Baking Soda</button>
+              <button class="substance-btn1" value="HandSoap">Hand Soap</button>
+              <button class="substance-btn1" value="Bleach">Bleach</button>
+            </div>
+        </div>
+
+        <input type="range" id="slider1" class="slider">
+        <h3><span id="amount1">25</span>ml</h3>
+
+    </div>
+    <div class="substance2">
+        <h1>Substance 2</h1>
+
+        <div class="dropdown">
+            <h2 id="substance2">Water𝅏</h2>
+            <div class="dropdown-content">
+              <button class="substance-btn2" value="LemonJuice">Lemon Juice</button>
+              <button class="substance-btn2" value="Vinegar">Vinegar</button>
+              <button class="substance-btn2" value="Soda">Soda</button>
+              <button class="substance-btn2" value="Water">Water</button>
+              <button class="substance-btn2" value="BakingSoda">Baking Soda</button>
+              <button class="substance-btn2" value="HandSoap">Hand Soap</button>
+              <button class="substance-btn2" value="Bleach">Bleach</button>
+            </div>
+        </div>
+
+        <input type="range" id="slider2" class="slider">
+        <h3><span id="amount2">25</span>ml</h3>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
